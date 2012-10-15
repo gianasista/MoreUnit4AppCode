@@ -9,6 +9,7 @@ import com.intellij.psi.PsiDocumentManager;
 import com.intellij.psi.PsiFile;
 import com.intellij.psi.PsiManager;
 import com.intellij.psi.search.PsiShortNamesCache;
+import org.moreunit.JumpLogic;
 
 /**
  * Created with IntelliJ IDEA.
@@ -24,8 +25,8 @@ public class JumpAction extends AnAction
         Editor editor = FileEditorManager.getInstance(project).getSelectedTextEditor();
         PsiFile file = PsiDocumentManager.getInstance(project).getPsiFile(editor.getDocument());
 
-        Jumper jumper = new Jumper(file);
-        VirtualFile target = jumper.getTarget();
+        JumpLogic jumper = new JumpLogic(file);
+        VirtualFile target = jumper.target();
         if (target != null)
             FileEditorManager.getInstance(project).openFile(target, true);
     }
