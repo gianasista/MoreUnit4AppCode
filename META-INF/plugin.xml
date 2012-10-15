@@ -18,7 +18,7 @@
   </project-components>
 
     <actions>
-        <action id="jumpaction" class="JumpAction" text="Jump Action">
+        <action id="jumpaction" class="org.moreunit.JumpAction" text="Jump Action">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
             <keyboard-shortcut keymap="$default" first-keystroke="ctrl shift J"/>
         </action>
