@@ -26,21 +26,18 @@ class JumpLogic (source: PsiFile) {
   {
     for (virtualFile <- fileListe)
     {
-      val result = findVirtualFileBelowVirtualFileByName(virtualFile, name)
+      var result: VirtualFile = null
+
+      if (virtualFile.isDirectory)
+        result = findVirtualFileInListByName(virtualFile.getChildren, name)
+      else if (new ClassMatcher(virtualFile.getName, name, fileExtensionFromSource).matches)
+        result = virtualFile
+
       if (result != null)
         return result
     }
 
     return null
-  }
-
-  def findVirtualFileBelowVirtualFileByName (virtualFile: VirtualFile, name: String): VirtualFile =
-  {
-    val result = virtualFile.findChild(name+fileExtensionFromSource)
-    if (result != null)
-      return result
-
-    return findVirtualFileInListByName(virtualFile.getChildren, name)
   }
 
   def targetName: String = if (isTestCase) nameOfCut else nameOfTest

@@ -5,6 +5,8 @@ import com.intellij.openapi.project.Project
 import com.intellij.openapi.editor.Editor
 import com.intellij.openapi.fileEditor.FileEditorManager
 import com.intellij.psi.{PsiDocumentManager, PsiFile}
+import com.intellij.openapi.ui.popup.PopupChooserBuilder
+import javax.swing.JList
 
 /**
  * Created with IntelliJ IDEA.
@@ -26,5 +28,8 @@ class JumpAction extends AnAction {
 
     if (target != null)
       FileEditorManager.getInstance(project).openFile(target, true)
+
+    val dialog = new ChooseDialog(project)
+    dialog.show
   }
 }
