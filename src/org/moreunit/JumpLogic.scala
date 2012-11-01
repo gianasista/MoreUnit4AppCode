@@ -3,6 +3,8 @@ package org.moreunit
 import com.intellij.psi.PsiFile
 import com.intellij.openapi.vfs.VirtualFile
 import com.intellij.openapi.roots.ProjectRootManager
+import collection.mutable.ArrayBuffer
+import java.util
 ;
 
 /**
@@ -16,28 +18,23 @@ class JumpLogic (source: PsiFile) {
 
   val TestCaseSuffix = "Test"
 
-  def target: VirtualFile =
+  def target: util.ArrayList[VirtualFile] =
   {
     val contentRoots = ProjectRootManager.getInstance(source.getProject).getContentRoots
-    findVirtualFileInListByName(contentRoots, targetName)
+    findVirtualFilesInListByName(contentRoots, targetName)
   }
 
-  def findVirtualFileInListByName(fileListe: Array[VirtualFile], name: String): VirtualFile =
+  def findVirtualFilesInListByName(fileListe: Array[VirtualFile], name: String): util.ArrayList[VirtualFile] =
   {
+    var resultList = new util.ArrayList[VirtualFile]()
     for (virtualFile <- fileListe)
     {
-      var result: VirtualFile = null
-
       if (virtualFile.isDirectory)
-        result = findVirtualFileInListByName(virtualFile.getChildren, name)
+        resultList.addAll(findVirtualFilesInListByName(virtualFile.getChildren, name))
       else if (new ClassMatcher(virtualFile.getName, name, fileExtensionFromSource).matches)
-        result = virtualFile
-
-      if (result != null)
-        return result
+        resultList.add(virtualFile)
     }
-
-    return null
+    return resultList
   }
 
   def targetName: String = if (isTestCase) nameOfCut else nameOfTest
@@ -48,7 +45,8 @@ class JumpLogic (source: PsiFile) {
     source.getName.dropRight(source.getName.length - lastIndexOfDot)
   }
 
-  def fileExtensionFromSource: String = {
+  def fileExtensionFromSource: String =
+  {
     val lastIndexOfDot = source.getName.lastIndexOf('.')
     source.getName.drop(lastIndexOfDot)
   }

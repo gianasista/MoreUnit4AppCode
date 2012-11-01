@@ -26,10 +26,10 @@ class JumpAction extends AnAction {
     val jumper = new JumpLogic(file)
     val target = jumper.target
 
-    if (target != null)
-      FileEditorManager.getInstance(project).openFile(target, true)
+    //if (target.isEmpty)
+    //  FileEditorManager.getInstance(project).openFile(target.get(0), true)
 
-    val dialog = new ChooseDialog(project)
+    val dialog = new ChooseDialog(project, target)
     dialog.show
   }
 }

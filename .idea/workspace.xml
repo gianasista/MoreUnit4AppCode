@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="47921a95-8bcd-43bc-ac5e-8947b7c04527" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MoreUnit.iml" afterPath="$PROJECT_DIR$/MoreUnit.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/moreunit/ChooseDialog.scala" afterPath="$PROJECT_DIR$/src/org/moreunit/ChooseDialog.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/moreunit/JumpAction.scala" afterPath="$PROJECT_DIR$/src/org/moreunit/JumpAction.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/moreunit/JumpLogic.scala" afterPath="$PROJECT_DIR$/src/org/moreunit/JumpLogic.scala" />
     </list>
@@ -65,7 +67,25 @@
       <file leaf-file-name="JumpLogic.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/moreunit/JumpLogic.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="55" selection-start="732" selection-end="732" vertical-scroll-proportion="0.3181818">
+            <state line="33" column="21" selection-start="983" selection-end="983" vertical-scroll-proportion="0.45454547">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectRootManager.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/roots/ProjectRootManager.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="59" selection-start="1877" selection-end="1877" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JumpAction.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/moreunit/JumpAction.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="6" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -80,10 +100,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ClassMatcherTest.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/org/moreunit/ClassMatcherTest.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="20" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ChooseDialog.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/moreunit/ChooseDialog.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="5" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
+            <state line="31" column="24" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,9 +138,10 @@
         <option value="$PROJECT_DIR$/src/Jumper.java" />
         <option value="$PROJECT_DIR$/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/org/moreunit/ClassMatcher.scala" />
-        <option value="$PROJECT_DIR$/src/org/moreunit/JumpLogic.scala" />
+        <option value="$PROJECT_DIR$/test/org/moreunit/ClassMatcherTest.scala" />
         <option value="$PROJECT_DIR$/src/org/moreunit/JumpAction.scala" />
         <option value="$PROJECT_DIR$/src/org/moreunit/ChooseDialog.scala" />
+        <option value="$PROJECT_DIR$/src/org/moreunit/JumpLogic.scala" />
       </list>
     </option>
   </component>
@@ -174,6 +204,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="MoreUnit4AppCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MoreUnit4AppCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MoreUnit4AppCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="moreunit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -250,11 +298,26 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Plugin.MoreUnit">
+    <configuration default="false" name="ClassMatcherTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="MoreUnit" />
+      <setting name="path" value="org.moreunit.ClassMatcherTest" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="MoreUnit" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -275,6 +338,24 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -303,24 +384,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -372,6 +435,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="false" name="MoreUnit" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="MoreUnit" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -386,8 +467,9 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Plugin.MoreUnit" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="ScalaTest.ClassMatcherTest" />
+      <item index="1" class="java.lang.String" itemvalue="Plugin.MoreUnit" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -437,7 +519,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24858756" sideWeight="0.7574421" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24858756" sideWeight="0.7574421" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24255788" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -506,16 +588,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/roots/ContentIterator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/projects/jetbrains/idea/platform/core-api/src/com/intellij/openapi/editor/Document.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="17" selection-start="1655" selection-end="1655" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/projects/jetbrains/idea/platform/platform-api/src/com/intellij/openapi/fileEditor/FileEditorManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="26" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.0" />
@@ -524,11 +596,6 @@
     <entry file="file://$USER_HOME$/projects/jetbrains/idea/platform/core-api/src/com/intellij/openapi/vfs/VirtualFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="40" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/scala-2.9.2/lib/scala-library.jar!/scala/package.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="6" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
@@ -561,14 +628,24 @@
         <state line="5" column="17" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/moreunit/JumpAction.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="15" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.69279" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/ui/popup/PopupChooserBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="81" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/scala-2.9.2/lib/scala-library.jar!/scala/package.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="6" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.018292682" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/roots/ProjectRootManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="59" selection-start="1877" selection-end="1877" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/moreunit/JumpAction.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="6" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/moreunit/ClassMatcher.scala">
@@ -576,14 +653,21 @@
         <state line="13" column="20" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/org/moreunit/ClassMatcherTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="20" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/moreunit/ChooseDialog.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="5" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0" />
+        <state line="31" column="24" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/moreunit/JumpLogic.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="55" selection-start="732" selection-end="732" vertical-scroll-proportion="0.3181818">
+        <state line="33" column="21" selection-start="983" selection-end="983" vertical-scroll-proportion="0.45454547">
           <folding />
         </state>
       </provider>
@@ -605,7 +689,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Scala</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -617,7 +701,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>scala-library</last-edited>
+          <last-edited>scalatest</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -641,7 +725,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Scala|MoreUnit</last-edited>
+          <last-edited>MoreUnit</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
