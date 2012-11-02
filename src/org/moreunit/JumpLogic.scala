@@ -17,44 +17,24 @@ import java.util
 class JumpLogic (source: PsiFile) {
 
   val TestCaseSuffix = "Test"
+  val matcher = new ClassMatcher(source)
 
   def target: util.ArrayList[VirtualFile] =
   {
     val contentRoots = ProjectRootManager.getInstance(source.getProject).getContentRoots
-    findVirtualFilesInListByName(contentRoots, targetName)
+    findVirtualFilesInListByName(contentRoots)
   }
 
-  def findVirtualFilesInListByName(fileListe: Array[VirtualFile], name: String): util.ArrayList[VirtualFile] =
+  def findVirtualFilesInListByName(fileListe: Array[VirtualFile]): util.ArrayList[VirtualFile] =
   {
     var resultList = new util.ArrayList[VirtualFile]()
     for (virtualFile <- fileListe)
     {
       if (virtualFile.isDirectory)
-        resultList.addAll(findVirtualFilesInListByName(virtualFile.getChildren, name))
-      else if (new ClassMatcher(virtualFile.getName, name, fileExtensionFromSource).matches)
+        resultList.addAll(findVirtualFilesInListByName(virtualFile.getChildren))
+      else if (matcher.matches(virtualFile))
         resultList.add(virtualFile)
     }
     return resultList
   }
-
-  def targetName: String = if (isTestCase) nameOfCut else nameOfTest
-
-  def filenameWithoutExtension: String =
-  {
-    val lastIndexOfDot = source.getName.lastIndexOf('.')
-    source.getName.dropRight(source.getName.length - lastIndexOfDot)
-  }
-
-  def fileExtensionFromSource: String =
-  {
-    val lastIndexOfDot = source.getName.lastIndexOf('.')
-    source.getName.drop(lastIndexOfDot)
-  }
-
-  def isTestCase: Boolean = filenameWithoutExtension.endsWith(TestCaseSuffix)
-
-  def nameOfCut: String = filenameWithoutExtension.dropRight(TestCaseSuffix.length)
-
-  def nameOfTest: String = filenameWithoutExtension+TestCaseSuffix
-
 }

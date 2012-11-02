@@ -12,6 +12,7 @@ import org.scalatest.matchers.ShouldMatchers
  */
 class ClassMatcherTest extends FunSpec with ShouldMatchers {
 
+  /*
   describe("ClassMatcher for Test")
   {
     it("should accept suffix")
@@ -20,5 +21,6 @@ class ClassMatcherTest extends FunSpec with ShouldMatchers {
       matcher should be ('matches)
     }
   }
+  */
 
 }
