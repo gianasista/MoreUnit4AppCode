@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <name>MoreUnit</name>
-  <description>Test Helper</description>
-  <version>1.0</version>
+  <description>MoreUnit is a test helper which adds a shortcut to switch between tests and classes under test.</description>
+  <version>1.1</version>
   <vendor>MoreUnit</vendor>
 
   <depends>com.intellij.modules.lang</depends>
